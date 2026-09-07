@@ -11,16 +11,22 @@
     <main>
       <header>
         <h1>Personvernerklæring for Vareta</h1>
-        <p>Sist oppdatert: <time datetime="2026-08-30">30. august 2026</time></p>
+        <p>Sist oppdatert: <time datetime="2026-09-07">7. september 2026</time></p>
       </header>
 
       <section>
         <h2>Kort fortalt</h2>
         <p>
-          Vareta hjelper deg å holde oversikt over mat du vil huske å bruke. Selve appen har ingen
-          konto, reklame, sporing, analyseverktøy eller egen server. Matlageret og innstillingene
-          lagres lokalt på iPhone. Vareta sender ikke matvarer, datoer, produktkoder, notater eller
-          kamerabilder til utvikleren.
+          Vareta hjelper deg å holde oversikt over mat du vil huske å bruke. Privat matlager
+          fungerer uten konto og lagres lokalt på iPhone. Appen har ingen reklame, sporing,
+          analyseverktøy eller egen server. Private varer lastes ikke automatisk opp til en
+          husstand. Kamerabilder lastes ikke opp.
+        </p>
+        <p>
+          Denne erklæringen dekker den lokale versjonen 1.1 og den planlagte, lukkede 1.2-betaen
+          med valgfri husstandsdeling gjennom iCloud. Hver deltaker bruker sin egen iCloud-konto.
+          Husstandsdeling i 1.2 er eksperimentell; full kontroll på flere fysiske iPhoner gjenstår.
+          Du kan fortsette med privat matlager uten å velge deling.
         </p>
         <p>
           Behandlingsansvarlig for Vareta er <strong>Ole Martin Amundsen</strong>, Norge. Du kan
@@ -72,8 +78,41 @@
         </ul>
         <p>
           Opplysningene brukes bare for å vise matlageret, prioritere hva som bør følges opp, og lage
-          lokale påminnelser. De ligger i appens beskyttede område på enheten. Vareta har ingen egen
-          skylagring eller CloudKit-synkronisering.
+          lokale påminnelser. Privat matlager og innstillinger ligger i appens beskyttede område
+          på enheten. Versjon 1.1 har ingen CloudKit-synkronisering. Valgfri deling i 1.2 er
+          beskrevet nedenfor.
+        </p>
+      </section>
+
+      <section>
+        <h2>Valgfri husstandsdeling i 1.2</h2>
+        <p>
+          Når du aktivt velger husstandsdeling og godkjenner informasjonen i appen, brukes Apples
+          CloudKit til et felles matlager. Delte varer lagres i eierens private iCloud-database og
+          blir tilgjengelige for inviterte medlemmer gjennom Apples deling. Dette er ikke en
+          offentlig database. Å opprette eller bli med i en husstand deler ingen eksisterende
+          private varer.
+        </p>
+        <p>
+          Det delte matlageret kan inneholde stedets navn, varenavn, kategori, oppbevaring, mengde
+          og enhet, pakningsdato med kontrollstatus og kilde, samt tidspunkt for registrering,
+          endring, åpning, frysing, tining, bruk og kasting. Tekniske identifikatorer knytter
+          husstand, steder, varer og endringer sammen. iCloud-identitet og medlemsrettigheter
+          brukes for å kontrollere tilgang. Produktkoder, private notater, kamerabilder og
+          innstillinger for varsler inngår ikke i delingen.
+        </p>
+        <p>
+          Inviterte medlemmer kan se og endre det felles matlageret. Utvikleren får ikke generell
+          tilgang til innholdet i andres private eller delte CloudKit-databaser gjennom
+          utviklerkontoen. Dersom utvikleren selv inviteres til en husstand, får vedkommende samme
+          innsyn som andre inviterte medlemmer. Support og TestFlight behandles separat nedenfor.
+        </p>
+        <p>
+          Enheten kan lagre en lokal kopi av den delte oversikten og uavklarte endringer for
+          gjenoppretting. En endring som venter på synkronisering, er ikke bekreftet hos de andre
+          medlemmene. Frakoblede enheter kan beholde tidligere nedlastede opplysninger. Fjerning av
+          tilgang gjør ikke allerede viste opplysninger eller eksterne kopier usett. Apple
+          behandler iCloud-tjenesten etter sine vilkår og personvernregler.
         </p>
       </section>
 
@@ -85,7 +124,11 @@
           ikke av Vareta og lastes ikke opp. Bare opplysninger du ser og bekrefter i appen, kan
           lagres i matlageret.
         </p>
-        <p>Du kan alltid registrere en vare manuelt uten å gi kameratilgang.</p>
+        <p>
+          Du kan alltid registrere en vare manuelt uten å gi kameratilgang. Et skanneforslag er
+          ikke en bekreftet pakningsdato før du har kontrollert det. Anslåtte og kvitteringsbaserte
+          datoer forblir anslag, også etter at du har sett dem. Deling endrer ikke dette.
+        </p>
       </section>
 
       <section>
@@ -96,13 +139,18 @@
           synlige på låst skjerm, i Varslingssenter og på en tilkoblet Apple Watch. Varsler kan slås
           av i Vareta eller i iOS-innstillingene.
         </p>
-        <p>Vareta bruker ikke pushvarsler eller en egen varslingstjeneste.</p>
+        <p>
+          Påminnelser om mat er lokale. iCloud-oppsettet i 1.2 har Apples nødvendige rettighet for
+          Push Notifications, men Vareta har ingen egen varslingstjeneste, servernøkkel for push
+          eller abonnement på fjernvarsler i denne versjonen. iCloud-deling slår ikke på varsler
+          om mat uten at du velger det.
+        </p>
       </section>
 
       <section>
         <h2>Apple-sikkerhetskopi</h2>
         <p>
-          Matlageret kan inngå i iPhone-sikkerhetskopien du har valgt hos Apple, fordi det ligger i
+          Det private matlageret kan inngå i iPhone-sikkerhetskopien du har valgt hos Apple, fordi det ligger i
           appens vanlige beskyttede område. Vareta har ikke tilgang til denne sikkerhetskopien og
           styrer ikke Apples lagringstid. Sletting i Vareta sletter derfor ikke nødvendigvis eldre
           Apple-administrerte sikkerhetskopier. Se Apples personvernerklæring og innstillingene for
@@ -121,7 +169,8 @@
         <p>
           Vi bruker tilgjengelige TestFlight-opplysninger bare for å finne feil og forbedre betaen.
           For vår behandling er grunnlaget personvernforordningen artikkel 6 nr. 1 bokstav f: vår berettigede interesse i å finne feil og forbedre sikkerhet, stabilitet og funksjonalitet i en frivillig, lukket beta for inviterte voksne. Hos oss har bare den behandlingsansvarlige tilgang. Vi deler ikke TestFlight-opplysninger med analyse-, markedsførings- eller forskningsleverandører. Vi sletter tilbakemeldinger i App Store Connect og eventuelle egne kopier senest 30 dager etter at saken er løst, og senest 30 dager etter at betaen avsluttes eller du ber om sletting der du har rett til det. Du kan avslutte testingen i TestFlight og slette betaappen, og du kan kontakte oss for å protestere mot vår behandling. Sletting hos oss endrer ikke Apples egen behandling. Apple opplyser at tilbakemeldinger beholdes i ett år, installasjonsopplysninger i to år, og at krasjlogger og bruksdata kan beholdes til feil er rettet. «Slett alle lokale data» i
-          Vareta sletter ikke opplysninger som Apple behandler gjennom TestFlight. Du kan lese mer i
+          versjon 1.1, eller «Slett private varer og innstillinger» i 1.2, sletter ikke opplysninger
+          som Apple behandler gjennom TestFlight. Du kan lese mer i
           <a href="https://www.apple.com/no/legal/privacy/data/no/test-flight/">Apples informasjon om
           TestFlight og personvern</a>.
         </p>
@@ -146,20 +195,30 @@
         <h2>Lagringstid og sletting</h2>
         <ul>
           <li>
-            Aktive varer og uklare poster blir liggende lokalt til du endrer eller sletter dem,
+            Aktive private varer og uklare poster blir liggende lokalt til du endrer eller sletter dem,
             eller fjerner appen.
           </li>
           <li>
-            Gyldige poster som er markert brukt eller kastet, slettes fra den aktive appdatabasen
+            Gyldige private poster som er markert brukt eller kastet, slettes fra den aktive appdatabasen
             neste gang appen åpnes etter 30 døgn.
           </li>
           <li>
-            Uklare eller motstridende historikkposter beholdes for kontroll og kan slettes manuelt.
+            Uklare eller motstridende private historikkposter beholdes for kontroll og kan slettes manuelt.
           </li>
           <li>
-            Du kan slette én vare permanent eller velge <strong>Slett alle lokale data</strong>.
-            Sistnevnte fjerner varer, historikk, Vareta-innstillinger og appens ventende eller leverte
-            varsler på denne iPhonen.
+            Du kan slette én privat vare permanent. I versjon 1.1 heter valget i Innstillinger
+            <strong>Slett alle lokale data</strong>. I 1.2 heter det
+            <strong>Slett private varer og innstillinger</strong>, med bekreftelsen
+            <strong>Slett private data permanent</strong>. Det fjerner private varer, privat
+            historikk, Vareta-innstillinger og appens ventende eller leverte varsler på denne iPhonen.
+            Husstandens iCloud-data, tilkoblingsopplysninger og uavklart deling beholdes.
+          </li>
+          <li>
+            Delte varer og delt historikk har ikke den private 30-dagersryddingen.
+            <strong>Koble fra på denne iPhonen</strong> skjuler og rydder den lokale delte oversikten,
+            men endrer ikke medlemskapet i iCloud eller det private matlageret. Tilkoblingsopplysninger
+            beholdes for gjenoppretting. Frakobling eller sletting av appen er ikke en fjernsletting av
+            husstandens iCloud-data eller kopier på andres enheter.
           </li>
           <li>
             Sletting i appen er atskilt fra Apple-sikkerhetskopi, TestFlight-data og e-post du
@@ -185,9 +244,10 @@
       <section>
         <h2>Dine valg og rettigheter</h2>
         <p>
-          Du kan se og endre opplysningene direkte i appen og slette dem uten å opprette en konto.
-          Fordi matlageret ikke sendes til oss, kan vi normalt ikke hente, eksportere eller slette
-          det for deg.
+          Du kan se, endre og slette private opplysninger i appen uten konto. I et delt matlager
+          bestemmes tilgangen av husstandens medlemsrettigheter. Vi kan normalt ikke hente,
+          eksportere eller slette innholdet i ditt private eller delte matlager for deg gjennom
+          utviklerkontoen.
         </p>
         <p>
           For opplysninger vi eventuelt mottar gjennom support eller TestFlight, kan du kontakte
