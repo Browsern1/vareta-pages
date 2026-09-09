@@ -11,7 +11,7 @@
     <main>
       <header>
         <h1>Personvernerklæring for Vareta</h1>
-        <p>Sist oppdatert: <time datetime="2026-09-07">7. september 2026</time></p>
+        <p>Sist oppdatert: <time datetime="2026-09-09">9. september 2026</time></p>
       </header>
 
       <section>
@@ -23,9 +23,10 @@
           husstand. Kamerabilder lastes ikke opp.
         </p>
         <p>
-          Denne erklæringen dekker den lokale versjonen 1.1 og den planlagte, lukkede 1.2-betaen
-          med valgfri husstandsdeling gjennom iCloud. Hver deltaker bruker sin egen iCloud-konto.
-          Husstandsdeling i 1.2 er eksperimentell; full kontroll på flere fysiske iPhoner gjenstår.
+          Denne erklæringen dekker den lokale versjonen 1.1, 1.2-betaen og den planlagte, lukkede
+          1.3-betaen med valgfri husstandsdeling gjennom iCloud. Hver deltaker bruker sin egen
+          iCloud-konto. Husstandsdeling er fortsatt eksperimentell; full kontroll på flere fysiske
+          iPhoner gjenstår.
           Du kan fortsette med privat matlager uten å velge deling.
         </p>
         <p>
@@ -79,19 +80,33 @@
         <p>
           Opplysningene brukes bare for å vise matlageret, prioritere hva som bør følges opp, og lage
           lokale påminnelser. Privat matlager og innstillinger ligger i appens beskyttede område
-          på enheten. Versjon 1.1 har ingen CloudKit-synkronisering. Valgfri deling i 1.2 er
+          på enheten. Versjon 1.1 har ingen CloudKit-synkronisering. Valgfri deling fra 1.2 er
           beskrevet nedenfor.
+        </p>
+        <p>
+          I den planlagte 1.3-betaen lagres også valgt matlager, lokale stedikoner og et valg om
+          fortsatt iCloud-tilkobling på denne iPhonen. Tekniske identifikatorer knytter valgene til
+          riktig husstand og sted. Ikonvalg synkroniseres ikke til andre medlemmer. Beredskapsvisningen
+          bruker varene og mengdene i det valgte matlageret; den oppretter ikke en egen lagret kopi av
+          varene, et nytt nettregister eller en ny analysetjeneste.
         </p>
       </section>
 
       <section>
-        <h2>Valgfri husstandsdeling i 1.2</h2>
+        <h2>Valgfri husstandsdeling fra 1.2</h2>
         <p>
           Når du aktivt velger husstandsdeling og godkjenner informasjonen i appen, brukes Apples
           CloudKit til et felles matlager. Delte varer lagres i eierens private iCloud-database og
           blir tilgjengelige for inviterte medlemmer gjennom Apples deling. Dette er ikke en
           offentlig database. Å opprette eller bli med i en husstand deler ingen eksisterende
           private varer.
+        </p>
+        <p>
+          I den planlagte 1.3-betaen kan appen huske en vellykket tilkobling du selv har valgt og
+          forsøke å koble til igjen når appen åpnes. Tilgangen kontrolleres på nytt før delt
+          innhold vises. Et nytt felles matlager velges etter tilkobling, men et uttrykkelig valg
+          av privat matlager respekteres. Når du kobler fra på denne iPhonen eller slår av deling,
+          slås automatisk tilkobling av. Dette endrer ikke medlemskapet i iCloud.
         </p>
         <p>
           Det delte matlageret kan inneholde stedets navn, varenavn, kategori, oppbevaring, mengde
@@ -140,7 +155,7 @@
           av i Vareta eller i iOS-innstillingene.
         </p>
         <p>
-          Påminnelser om mat er lokale. iCloud-oppsettet i 1.2 har Apples nødvendige rettighet for
+          Påminnelser om mat er lokale. iCloud-oppsettet fra 1.2 har Apples nødvendige rettighet for
           Push Notifications, men Vareta har ingen egen varslingstjeneste, servernøkkel for push
           eller abonnement på fjernvarsler i denne versjonen. iCloud-deling slår ikke på varsler
           om mat uten at du velger det.
@@ -180,7 +195,8 @@
         <h2>Eksterne lenker og kontakt</h2>
         <p>
           Vareta inneholder brukerinitierte HTTPS-lenker til denne personvernerklæringen og til
-          offentlig veiledning hos Mattilsynet. Når du åpner en ekstern nettside, gjelder nettstedets
+          offentlig veiledning hos Mattilsynet og, fra 1.3, Direktoratet for samfunnssikkerhet og
+          beredskap (DSB). Når du åpner en ekstern nettside, gjelder nettstedets
           egne personvernregler og tekniske logger.
         </p>
         <p>
@@ -207,11 +223,19 @@
           </li>
           <li>
             Du kan slette én privat vare permanent. I versjon 1.1 heter valget i Innstillinger
-            <strong>Slett alle lokale data</strong>. I 1.2 heter det
+            <strong>Slett alle lokale data</strong>. Fra 1.2 heter det
             <strong>Slett private varer og innstillinger</strong>, med bekreftelsen
             <strong>Slett private data permanent</strong>. Det fjerner private varer, privat
             historikk, Vareta-innstillinger og appens ventende eller leverte varsler på denne iPhonen.
             Husstandens iCloud-data, tilkoblingsopplysninger og uavklart deling beholdes.
+          </li>
+          <li>
+            I 1.3 fjernes også lagret valg av matlager og lokale stedikoner ved sletting av private
+            varer og innstillinger. Vanlig frakobling beholder disse lokale visningsvalgene for
+            senere tilkobling. Et beholdt valg gir aldri tilgang til husstanden alene.
+            Valget om fortsatt iCloud-tilkobling beholdes etter sletting av private data. Velg
+            <strong>Koble fra på denne iPhonen</strong> eller slå av deling for å stoppe automatisk
+            tilkobling.
           </li>
           <li>
             Delte varer og delt historikk har ikke den private 30-dagersryddingen.
